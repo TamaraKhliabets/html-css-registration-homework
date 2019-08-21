@@ -1,18 +1,19 @@
 .main {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: 'Lato', sans-serif;
     background: url(../assets/Layer.png) no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .form {
     width: 27em;
     height: 545px;
     padding: 3em;
-    color: rgb(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
     background: rgba(0, 0, 0, .5)
 }
 
@@ -60,6 +61,11 @@
 .form-info__input::placeholder,
 .form-info__input {
     padding: .2em;
+    color: #ffffff;
+}
+
+.form-info__input:-ms-input-placeholder,
+.form-info__input {
     color: #ffffff;
 }
 
@@ -113,3 +119,33 @@
     color: #ffffff;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 400px) {
+    .form-nav__label {
+        margin: 0 1em 0 -1em;
+        font-size: 1.5em;
+    }
+    .form-submit {
+        margin: 2em auto 1em;
+        font-size: 1.2em;
+    }
+    .form-checkbox {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        padding: 3em 0;
+    }
+    .form {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        background-size: auto;
+    }
+  } 
