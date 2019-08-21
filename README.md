@@ -1,2 +1,2 @@
 # html-css-registration-homework
-IT Shark Pro HTML+CSS HOMEWORK
+https://tokotomka.github.io/html-css-registration-homework/
