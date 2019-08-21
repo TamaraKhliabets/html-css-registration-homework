@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="styles/style.css"/>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <main class="main">
+        <form method="POST" action="https://reqres.in/api/register" class="form">
+            <header class="form-header">
+                <h2 class="form-header__sign">Sign in</h2>
+                <h2 class="form-header__sign">Sign up</h2>
+            </header>
+            <input type="tel" name="mobilePhone" pattern="\d+" placeholder="Mobile phone" required><br>
+            <input type="email" name="email" placeholder="Eamil ID" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="checkbox" checked>I agree to terms and conditions<br>
+            <input type="submit" value="Register">
+        </form>
+    </main>
+</body>
+
+</html>
